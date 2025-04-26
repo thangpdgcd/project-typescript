@@ -7,16 +7,13 @@ import Quickstart from "../../pages/quickstart";
 import { Link } from "react-router-dom"; // Import Link component
 import SubMenu from "antd/es/menu/SubMenu";
 import { Image } from "antd";
-import iconsearch from "../../assets/img/search-interface-symbol.png"; // Added missing closing quote
-import logo from "../../assets/img/logo2.svg";
-import "./index.scss";
 
-const { Sider } = Layout;
 
 const App: React.FC = () => {
   return (
     <Router>
       <Layout style={{ minHeight: "100vh" }}>
+
         <Sider width={230} theme='light' className='sidebar'>
           <div className='img-sidebar' style={{}}>
             <Image width={150} style={{}} src={logo}></Image>
@@ -49,6 +46,7 @@ const App: React.FC = () => {
               </SubMenu>
             </Menu>
           </div>
+
         </Sider>
         <Routes>
           <Route path='/introduction' element={<Introduction />} />
