@@ -7,4 +7,51 @@
   bottom: 0;
   scrollbar-width: thin;
   scrollbar-gutter: stable;
+
+  .img-sidebar {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .search {
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+
+
+.iconsearch
+{
+  position:absolute;
+  width: 15px;
+margin-left: 10px;
+ color: grey !important;  // T
+
+  line-height: 1.5;
+}
+   
+  }
+  .search input {
+    border: 1px solid grey;
+    height: 20px;
+    color: grey;
+    border-radius: 30px;
+    outline: none;
+    opacity: 1;
+    padding: 10px 30px;
+    width: 190px;
+    height: 30px;
+  }
+     .search input::placeholder {
+     display: flex;
+  
+    }
+
+}
+
+//ant-design-scss
+.submenu-title {
+  font-size: 18px; // Thay đổi kích thước chữ theo ý muốn
+  font-weight: bold; // Để làm cho tiêu đề đậm hơn
 }

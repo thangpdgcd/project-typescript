@@ -1,9 +1,12 @@
-import { Layout, Menu, theme } from "antd";
+
+import { Layout } from "antd";
 import "./App.scss";
 import Sidebar from "./components/sidebar";
+import { Link, Route, Routes } from "react-router-dom";
 import Introduction from "./pages/introduction";
 
-const { Content, Footer, Sider } = Layout;
+const { Content, Sider } = Layout;
+
 const App = () => {
   return (
     <>
@@ -11,8 +14,10 @@ const App = () => {
         <Sider className='side-container'>
           <Sidebar />
         </Sider>
-        <Content className='content'>
-          <Introduction />
+
+        <Content className='content-container' >
+       <Introduction/>
+
         </Content>
       </Layout>
     </>
